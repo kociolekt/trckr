@@ -1,0 +1,27 @@
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins',
+  'utils/animations',
+  'utils/placeholders';
+
+@import
+  'vendors/bootstrap',
+  'vendors/material-design-iconic-font/material-design-iconic-font';
+
+@import
+  'base/base',
+  'base/typography';
+
+@import
+  'layout/header',
+  'layout/navigation',
+  'layout/footer';
+
+//@import 'components/splash';
+
+@import
+  'pages/home';
+
+@import
+  'themes/theme';
