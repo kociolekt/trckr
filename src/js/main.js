@@ -3,25 +3,16 @@
  */
 
 import config from './modules/config';
+import gui from './modules/nwgui';
+import Trckr from './modules/trckr';
 
-class Main {
-  constructor () {
-    this.init();
-  }
-  init() {
-    for(var i = 1; i < 12; i++) {
+let main = new Trckr(config);
 
-    }
-
-    console.log(i);
-
-    for(let j = 1; j < 12; j++) {
-
-    }
-
-    console.log(j);
-  }
+if(config.debug) {
+  gui.Window.get().showDevTools(); // Run devtools
+  window.main = main; // Globalize main app variable
 }
 
 
-new Main();
+
+

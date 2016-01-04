@@ -44,8 +44,10 @@ config.scripts = {
     debug: true,
     transform: [
       babelify.configure({
+        plugins: ['transform-object-assign'],
         presets: ['es2015']
-      })
+      }),
+      'jstify'
     ]
   },
   source: 'main.js',
@@ -58,7 +60,7 @@ gulp.task('scripts', function () {
     .pipe(source(config.scripts.source))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(uglify())
+    //.pipe(uglify())
     .on('error', config.log)
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(config.scripts.dest));

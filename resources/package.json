@@ -7,19 +7,19 @@
     "timetracking"
   ],
   "window": {
-    "title": "Timetracker",
+    "title": "trckr",
     "icon": "link.png",
-    "toolbar": true,
-    "frame": true,
+    "toolbar": false,
+    "frame": false,
     "width": 800,
     "height": 500,
     "position": "center",
+    "resizable": false,
+    "fullscreen": false,
+    "transparent": true,
     "min_width": 400,
     "min_height": 200,
     "max_width": 800,
     "max_height": 600
-  },
-  "webkit": {
-    "plugin": true
   }
 }
