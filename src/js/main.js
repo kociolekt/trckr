@@ -6,13 +6,9 @@ import config from './modules/config';
 import gui from './modules/nwgui';
 import Trckr from './modules/trckr';
 
-let main = new Trckr(config);
+let trckr = new Trckr(config);
 
 if(config.debug) {
   gui.Window.get().showDevTools(); // Run devtools
-  window.main = main; // Globalize main app variable
+  window.trckr = trckr; // Globalize main app variable
 }
-
-
-
-

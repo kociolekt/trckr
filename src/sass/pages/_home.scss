@@ -1,0 +1,35 @@
+@mixin box {
+  padding: 10px;
+  border-width: 10px;
+  border-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+  background-color: #ffffff;
+}
+
+.trckr {
+
+  margin: 10px;
+
+  &__content {
+    @include box();
+    display: inline-block;
+    width: 714px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: top;
+  }
+
+  &__icon {
+    @include box();
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: top;
+    -webkit-app-region: drag;
+  }
+}

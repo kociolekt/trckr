@@ -1,4 +1,5 @@
 import template from '../../templates/layout.html';
+import $ from 'jquery';
 
 export default class Trckr {
   constructor (options) {
@@ -10,6 +11,8 @@ export default class Trckr {
   }
 
   init() {
-
+    $(document).ready(function() {
+      console.log(2);
+    });
   }
 }

@@ -7,6 +7,7 @@ var babelify = require('babelify');
 var NwBuilder = require('nw-builder');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
+var exec = require('child_process').exec;
 
 var config = {
   log: console.log,

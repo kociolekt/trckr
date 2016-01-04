@@ -1,10 +1,5 @@
 @charset "UTF-8";
 /*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*!
  *  Material Design Iconic Font by Sergey Kupletsky ($zavoloklom) - http://zavoloklom.github.io/material-design-iconic-font/
  *  License - http://zavoloklom.github.io/material-design-iconic-font/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
@@ -5127,8 +5122,58 @@
 .zmdi-directions:before {
   content: ""; }
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  font-family: "Roboto-Regular"; }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-user-select: none; }
+
+body {
+  font-family: "Verdana"; }
 
 @font-face {
   font-family: 'Roboto-Regular';
@@ -5137,3 +5182,34 @@ body {
 @font-face {
   font-family: 'Roboto-Bold';
   src: url("../fonts/Roboto-Bold-webfont.woff") format("woff"); }
+
+.trckr {
+  margin: 10px; }
+  .trckr__content {
+    padding: 10px;
+    border-width: 10px;
+    border-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+    background-color: #ffffff;
+    display: inline-block;
+    width: 714px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: top; }
+  .trckr__icon {
+    padding: 10px;
+    border-width: 10px;
+    border-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+    background-color: #ffffff;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: top;
+    -webkit-app-region: drag; }
